@@ -20,20 +20,19 @@ class CounterScreen extends HookWidget {
               children: <Widget>[
                 Center(
                   child: IconButton(
-                    icon: Icon(Icons.remove),
-                    onPressed: counterHook['decrement'],
-                  ),
+                      icon: Icon(Icons.remove),
+                      onPressed: counterHook.decrement),
                 ),
                 Center(
                   child: Text(
-                    "${counterHook['counter'].value}",
+                    "${counterHook.counter.value}",
                     style: TextStyle(fontSize: 40),
                   ),
                 ),
                 Center(
                   child: IconButton(
                     icon: Icon(Icons.add),
-                    onPressed: counterHook['increment'],
+                    onPressed: counterHook.increment,
                   ),
                 ),
               ],
